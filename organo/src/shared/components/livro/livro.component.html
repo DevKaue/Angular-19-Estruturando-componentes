@@ -1,9 +1,11 @@
 <section>
-  <section>
-    <div class="imagem">
-      <img [src]="livro.imagem" [alt]="livro.titulo" />
-    </div>
-  </section>
+  <button class="favorito-btn" (click)="alternarFavorito()">
+    <span>{{ livro.favorito ? '\u2764' : '\u2661' }}</span>
+  </button>
+
+  <div class="imagem">
+    <img [src]="livro.imagem" [alt]="livro.titulo" />
+  </div>
 
   <div class="info-livro">
     <h2 class="texto-h2">{{ livro.titulo }}</h2>
