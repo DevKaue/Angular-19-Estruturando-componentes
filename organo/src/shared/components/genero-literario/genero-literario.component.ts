@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, input, OnInit } from '@angular/core';
 import { livros } from '../../mocks/mock-livros';
 import { LivroComponent } from "../livro/livro.component";
+import { GeneroLivro } from '../livro/livro';
 
 @Component({
   selector: 'app-genero-literario',
@@ -9,8 +10,7 @@ import { LivroComponent } from "../livro/livro.component";
   imports: [LivroComponent]
 })
 export class GeneroLiterarioComponent implements OnInit {
-
-  livro = livros[0]
+  genero = input.required<GeneroLivro>();
 
   constructor() { }
 

@@ -6,8 +6,8 @@ export const livros: Livro[] = [
     autoria: 'Virginia Woolf',
     favorito: false,
     genero: {
-      id: 'ficcao',
-      value: 'Ficcao',
+      id: 'ficcao-cientifica',
+      value: 'Ficção Científica',
       livros: [],
     },
     imagem:
